@@ -1,0 +1,15 @@
+{
+  "name": "Fresco y Divertido",
+  "short_name": "Fresco",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFF9F0",
+  "theme_color": "#1E7A3A",
+  "icons": [
+    {
+      "src": "https://emojiapi.dev/api/v1/salad/192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
