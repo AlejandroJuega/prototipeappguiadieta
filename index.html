@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fresco y Divertido · Demo</title>
+
+<!-- Favicon + Manifest -->
+<link rel="icon" href="https://emojiapi.dev/api/v1/salad/128.png">
+<link rel="manifest" href="manifest.json">
+
+<!-- Fuentes y CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header>
+ <div class="wrap">
+   <div class="brand">
+     <div class="logo">🥗</div>
+     <div>
+       <div class="title">FRESCO Y DIVERTIDO</div>
+       <small>Tu guía saludable</small>
+     </div>
+   </div>
+   <nav id="nav">
+     <button class="tab active" data-view="inicio">Inicio</button>
+     <button class="tab" data-view="buscar">Buscar</button>
+     <button class="tab" data-view="registro">Registro</button>
+     <button class="tab" data-view="retos">Retos</button>
+     <button class="tab" data-view="medicas">Recetas médicas</button>
+     <button class="tab" data-view="perfil">Perfil</button>
+   </nav>
+ </div>
+</header>
+
+<main class="wrap">
+  <!-- SECCIONES -->
+  <section id="inicio" class="active">
+    <div class="card">
+      <h2>Hola, <span id="user">chef</span> 👋</h2>
+      <p>Marca cómo te fue hoy y pregunta a nuestra IA demo 🤖</p>
+      <div class="emoji-row" id="emojis">
+        <div class="emoji" data-e="bien"><span>😀</span><small>BIEN</small></div>
+        <div class="emoji" data-e="mala"><span>😕</span><small>MALA</small></div>
+        <div class="emoji" data-e="horrible"><span>🤢</span><small>HORRIBLE</small></div>
+      </div>
+      <p id="msg"></p>
+    </div>
+
+    <div class="card">
+      <h3>🍋 Inspírame</h3>
+      <div id="sugs"></div>
+      <button id="insp" class="btn">Mostrar ideas</button>
+    </div>
+
+    <div class="card">
+      <h3>💬 Preguntar a la IA (demo)</h3>
+      <input id="iaPrompt" class="input" placeholder="Ej. Quiero algo para el colesterol">
+      <button id="askIA" class="btn">Preguntar</button>
+      <div id="iaResponse" class="chatbox" style="display:none;"></div>
+    </div>
+  </section>
+
+  <section id="buscar">
+    <div class="card">
+      <h2>Buscar recetas</h2>
+      <input id="q" class="input" placeholder="Ej. ensalada de quinoa">
+      <button id="bsearch" class="btn">Buscar</button>
+    </div>
+    <div id="res"></div>
+  </section>
+
+  <section id="registro">
+    <div class="card">
+      <h2>Registro diario</h2>
+      <input id="food" class="input" placeholder="¿Qué comiste?">
+      <button id="save" class="btn">Guardar</button>
+    </div>
+    <div id="list"></div>
+  </section>
+
+  <section id="retos">
+    <div class="card">
+      <h2>Reto semanal</h2>
+      <p id="reto"></p>
+      <button id="done" class="btn">Completado</button>
+    </div>
+  </section>
+
+  <section id="medicas">
+    <div class="card">
+      <h2>🩺 Recetas médicas</h2>
+      <input id="medsearch" class="input" placeholder="Ej. colesterol, diabetes...">
+    </div>
+    <div id="medlist"></div>
+  </section>
+
+  <section id="perfil">
+    <div class="card">
+      <h2>Perfil</h2>
+      <input id="name" class="input" placeholder="Tu nombre">
+      <button id="savename" class="btn">Guardar</button>
+    </div>
+  </section>
+</main>
+
+<footer>🥗 Fresco y Divertido · Demo educativa · Instalación PWA disponible</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
